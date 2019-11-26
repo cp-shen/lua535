@@ -51,3 +51,7 @@ add_executable(luac_535
         ${source_files}
         src/luac.c
         )
+
+target_link_libraries(lua_535 m)
+
+target_link_libraries(luac_535 m)
