@@ -52,6 +52,8 @@ add_executable(luac_535
         src/luac.c
         )
 
-target_link_libraries(lua_535 m)
-
-target_link_libraries(luac_535 m)
+if(WIN32)
+else()
+    target_link_libraries(lua_535 m)
+    target_link_libraries(luac_535 m)
+endif()
